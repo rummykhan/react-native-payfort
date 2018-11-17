@@ -208,7 +208,7 @@ public class PayFortPayment {
                     Payfort.KEY_SERVICE_COMMAND + "=" + Payfort.COMMAND_SDK_TOKEN +
                     SHA_REQUEST_PHRASE;
 
-            jsonObject.put(Payfort.KEY_SERVICE_COMMAND, SDK_TOKEN);
+            jsonObject.put(Payfort.KEY_SERVICE_COMMAND, Payfort.COMMAND_SDK_TOKEN);
             jsonObject.put(Payfort.KEY_MERCHANT_IDENTIFIER, MERCHANT_IDENTIFIER);
             jsonObject.put(Payfort.KEY_ACCESS_CODE, ACCESS_CODE);
             String signature = getSignatureSHA256(concatenatedString);
