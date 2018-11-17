@@ -36,6 +36,10 @@ public class NativeFortModule extends ReactContextBaseJavaModule {
 
         constants.put(Payfort.KEY_CURRENCY_AED, Payfort.CURRENCY_AED);
         constants.put(Payfort.KEY_CURRENCY_SAR, Payfort.CURRENCY_SAR);
+
+        constants.put(Payfort.KEY_LANGUAGE_EN, Payfort.LANGUAGE_EN);
+        constants.put(Payfort.KEY_LANGUAGE_AR, Payfort.LANGUAGE_AR);
+
         return constants;
     }
 

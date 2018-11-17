@@ -34,6 +34,8 @@ public class Payfort {
     public static final String KEY_COMMAND_PURCHASE = "COMMAND_PURCHASE";
     public static final String KEY_CURRENCY_AED = "CURRENCY_AED";
     public static final String KEY_CURRENCY_SAR = "CURRENCY_SAR";
+    public static final String KEY_LANGUAGE_EN = "LANGUAGE_EN";
+    public static final String KEY_LANGUAGE_AR = "LANGUAGE_AR";
 
     //Request key for response
     public static final String RESPONSE_GET_TOKEN = "RESPONSE_GET_TOKEN";
@@ -46,4 +48,8 @@ public class Payfort {
     // Currency
     public final static String CURRENCY_AED = "AED";
     public final static String CURRENCY_SAR = "SAR";
+
+    // Language
+    public final static String LANGUAGE_EN = "en";
+    public final static String LANGUAGE_AR = "ar";
 }
