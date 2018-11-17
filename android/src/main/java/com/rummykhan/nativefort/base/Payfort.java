@@ -15,7 +15,7 @@ public class Payfort {
     public static final String FAILURE_SDK_INIT = "FAILURE_SDK_INIT";
     public static final String FAILURE_TOKEN_INIT = "FAILURE_TOKEN_INIT";
     public static final String PURCHASE_EXCEPTION = "PURCHASE_EXCEPTION";
-
+    public static final String GENERAL_EXCEPTION = "GENERAL_EXCEPTION";
 
     // Urls
     public final static String URL_SANDBOX = "https://sbpaymentservices.payfort.com/FortAPI/paymentApi/";

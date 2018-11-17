@@ -1,13 +1,13 @@
 
-# react-native-fort
+# React Native Payfort (Android Only)
 
-### Install using
+### Install
 
-`$ npm install react-native-fort --save`
+`$ npm install react-native-payfort --save`
 
 ### Automatic Installation
 
-`$ react-native link react-native-fort`
+`$ react-native link react-native-payfort`
 
 
 ### Manual Installation
@@ -19,12 +19,12 @@
   - Add `new NativeFortPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-fort'
-  	project(':react-native-fort').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-fort/android')
+  	include ':react-native-payfort'
+  	project(':react-native-payfort').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-payfort/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-fort')
+      compile project(':react-native-payfort')
   	```
 
 ### Usage
@@ -77,7 +77,7 @@ NativeFort.sendCommand(
   "card_holder_name":"Visa",
   "payment_option":"VISA",
   "expiry_date":"2105",
-  "customer_ip":"94.58.149.203",
+  "customer_ip":"4.8.1.2",
   "eci":"ECOMMERCE",
   "language":"en",
   "fort_id":"154244999500011151",
@@ -97,7 +97,7 @@ NativeFort.sendCommand(
 
 ```javascript
 
-import NativeFort from 'react-native-fort';
+import NativeFort from 'react-native-payfort';
 
 let merchantID = "xxxxx";
 let accessCode = "xxxxx";

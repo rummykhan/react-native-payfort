@@ -1,6 +1,6 @@
 
 {
-  "name": "react-native-fort",
+  "name": "react-native-payfort",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,11 +11,13 @@
     "react-native",
     "payfort"
   ],
-  "author": "",
-  "license": "",
+  "author": "Rehan Manzoor",
+  "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
-
-  }
+    "react-native": "^0.41.2"
+  },
+  "bugs": {
+    "url": "https://github.com/rummykhan/react-native-payfort/issues"
+  },
+  "homepage": "https://github.com/rummykhan/react-native-payfort#readme"
 }

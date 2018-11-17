@@ -156,6 +156,7 @@ public class PayFortPayment {
                 conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("POST");
                 conn.setRequestProperty("content-type", "application/json");
+                //TODO: Add timeout
 
                 String str = getTokenParams();
                 byte[] outputInBytes = str.getBytes("UTF-8");
