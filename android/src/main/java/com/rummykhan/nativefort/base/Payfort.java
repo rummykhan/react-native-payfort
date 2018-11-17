@@ -7,9 +7,9 @@ package com.rummykhan.nativefort;
 public class Payfort {
 
     // Commands
-    public final static String AUTHORIZATION = "AUTHORIZATION";
-    public final static String PURCHASE = "PURCHASE";
-    private final static String SDK_TOKEN = "SDK_TOKEN";
+    public final static String COMMAND_AUTHORIZATION = "AUTHORIZATION";
+    public final static String COMMAND_PURCHASE = "PURCHASE";
+    private final static String COMMAND_SDK_TOKEN = "SDK_TOKEN";
 
     // Keys
     public static final String FAILURE_SDK_INIT = "FAILURE_SDK_INIT";

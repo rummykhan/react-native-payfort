@@ -205,7 +205,7 @@ public class PayFortPayment {
                     Payfort.KEY_DEVICE_ID + "=" + device_id +
                     Payfort.KEY_LANGUAGE + "=" + currentLanguage +
                     Payfort.KEY_MERCHANT_IDENTIFIER + "=" + MERCHANT_IDENTIFIER +
-                    Payfort.KEY_SERVICE_COMMAND + "=" + SDK_TOKEN +
+                    Payfort.KEY_SERVICE_COMMAND + "=" + Payfort.COMMAND_SDK_TOKEN +
                     SHA_REQUEST_PHRASE;
 
             jsonObject.put(Payfort.KEY_SERVICE_COMMAND, SDK_TOKEN);

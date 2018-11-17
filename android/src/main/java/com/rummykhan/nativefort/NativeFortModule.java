@@ -31,8 +31,8 @@ public class NativeFortModule extends ReactContextBaseJavaModule {
     public Map<String, Object> getConstants() {
         final Map<String, Object> constants = new HashMap<>();
 
-        constants.put(Payfort.KEY_COMMAND_AUTHORIZATION, Payfort.AUTHORIZATION);
-        constants.put(Payfort.KEY_COMMAND_PURCHASE, Payfort.PURCHASE);
+        constants.put(Payfort.KEY_COMMAND_AUTHORIZATION, Payfort.COMMAND_AUTHORIZATION);
+        constants.put(Payfort.KEY_COMMAND_PURCHASE, Payfort.COMMAND_PURCHASE);
 
         constants.put(Payfort.KEY_CURRENCY_AED, Payfort.CURRENCY_AED);
         constants.put(Payfort.KEY_CURRENCY_SAR, Payfort.CURRENCY_SAR);
@@ -79,7 +79,7 @@ public class NativeFortModule extends ReactContextBaseJavaModule {
             payFortPayment.requestForPayment(payFortData);
 
         } catch (Exception e) {
-            promise.reject(PayFort.PURCHASE_EXCEPTION, e);
+            promise.reject(Payfort.PURCHASE_EXCEPTION, e);
         }
     }
 
