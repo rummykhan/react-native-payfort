@@ -4,7 +4,7 @@ package com.rummykhan.nativefort;
 /**
  * Created by rummykhan on 17/11/18
  */
-public class PayFort {
+public class Payfort {
 
     // Commands
     public final static String AUTHORIZATION = "AUTHORIZATION";

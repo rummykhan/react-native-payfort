@@ -90,13 +90,13 @@ public class PayFortPayment {
     private void requestPurchase() {
         try {
 
-            FortSdk.getInstance().registerCallback(context, getPurchaseFortRequest(), getEnvironment(), PayFort.RESPONSE_PURCHASE_INT, fortCallback, true, new FortInterfaces.OnTnxProcessed() {
+            FortSdk.getInstance().registerCallback(context, getPurchaseFortRequest(), getEnvironment(), Payfort.RESPONSE_PURCHASE_INT, fortCallback, true, new FortInterfaces.OnTnxProcessed() {
                 @Override
                 public void onCancel(Map<String, Object> requestParamsMap, Map<String, Object> responseMap) {
                     JSONObject response = new JSONObject(responseMap);
                     PayFortData payFortData = gson.fromJson(response.toString(), PayFortData.class);
                     payFortData.setPaymentResponse(response.toString());
-                    promise.reject(response.toString(), PayFort.RESPONSE_PURCHASE_CANCEL);
+                    promise.reject(response.toString(), Payfort.RESPONSE_PURCHASE_CANCEL);
                 }
 
                 @Override
@@ -112,11 +112,11 @@ public class PayFortPayment {
                     JSONObject response = new JSONObject(fortResponseMap);
                     PayFortData payFortData = gson.fromJson(response.toString(), PayFortData.class);
                     payFortData.setPaymentResponse(response.toString());
-                    promise.reject(response.toString(), PayFort.RESPONSE_PURCHASE_FAILURE);
+                    promise.reject(response.toString(), Payfort.RESPONSE_PURCHASE_FAILURE);
                 }
             });
         } catch (Exception e) {
-            promise.reject(e.getMessage(), PayFort.FAILURE_SDK_INIT);
+            promise.reject(e.getMessage(), Payfort.FAILURE_SDK_INIT);
         }
     }
 
@@ -254,10 +254,10 @@ public class PayFortPayment {
 
     public void setHostUrl() {
 
-        String url = PayFort.URL_SANDBOX;
+        String url = Payfort.URL_SANDBOX;
 
         if (!this.isEnvironmentSandBox()) {
-            url = PayFort.URL_PRODUCTION;
+            url = Payfort.URL_PRODUCTION;
         }
 
         PayFortPayment.WS_GET_TOKEN = url;

@@ -31,11 +31,11 @@ public class NativeFortModule extends ReactContextBaseJavaModule {
     public Map<String, Object> getConstants() {
         final Map<String, Object> constants = new HashMap<>();
 
-        constants.put(Payfort.KEY_COMMAND_AUTHORIZATION, PayFort.AUTHORIZATION);
-        constants.put(Payfort.KEY_COMMAND_PURCHASE, PayFort.PURCHASE);
+        constants.put(Payfort.KEY_COMMAND_AUTHORIZATION, Payfort.AUTHORIZATION);
+        constants.put(Payfort.KEY_COMMAND_PURCHASE, Payfort.PURCHASE);
 
-        constants.put(Payfort.KEY_CURRENCY_AED, PayFort.CURRENCY_AED);
-        constants.put(Payfort.KEY_CURRENCY_SAR, PayFort.CURRENCY_SAR);
+        constants.put(Payfort.KEY_CURRENCY_AED, Payfort.CURRENCY_AED);
+        constants.put(Payfort.KEY_CURRENCY_SAR, Payfort.CURRENCY_SAR);
         return constants;
     }
 
