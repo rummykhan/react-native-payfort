@@ -1,5 +1,6 @@
 package com.rummykhan.nativefort;
 
+
 /**
  * Created by rummykhan on 17/11/18
  */
@@ -14,10 +15,7 @@ public class PayFort {
     public static final String FAILURE_SDK_INIT = "FAILURE_SDK_INIT";
     public static final String FAILURE_TOKEN_INIT = "FAILURE_TOKEN_INIT";
     public static final String PURCHASE_EXCEPTION = "PURCHASE_EXCEPTION";
-    public static final String COMMAND_AUTHORIZATION = "COMMAND_AUTHORIZATION";
-    public static final String COMMAND_PURCHASE = "COMMAND_PURCHASE";
-    public static final String CURRENCY_AED = "CURRENCY_AED";
-    public static final String CURRENCY_SAR = "CURRENCY_SAR";
+
 
     // Urls
     public final static String URL_SANDBOX = "https://sbpaymentservices.payfort.com/FortAPI/paymentApi/";
@@ -30,6 +28,12 @@ public class PayFort {
     public final static String KEY_LANGUAGE = "language";
     public final static String KEY_ACCESS_CODE = "access_code";
     public final static String KEY_SIGNATURE = "signature";
+
+    // Constants Keys
+    public static final String KEY_COMMAND_AUTHORIZATION = "COMMAND_AUTHORIZATION";
+    public static final String KEY_COMMAND_PURCHASE = "COMMAND_PURCHASE";
+    public static final String KEY_CURRENCY_AED = "CURRENCY_AED";
+    public static final String KEY_CURRENCY_SAR = "CURRENCY_SAR";
 
     //Request key for response
     public static final String RESPONSE_GET_TOKEN = "RESPONSE_GET_TOKEN";

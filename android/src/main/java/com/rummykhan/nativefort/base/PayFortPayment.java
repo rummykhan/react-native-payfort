@@ -116,7 +116,7 @@ public class PayFortPayment {
                 }
             });
         } catch (Exception e) {
-            promise.reject(response.getMessage(), PayFort.FAILURE_SDK_INIT);
+            promise.reject(e.getMessage(), PayFort.FAILURE_SDK_INIT);
         }
     }
 
