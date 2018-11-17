@@ -79,7 +79,7 @@ public class NativeFortModule extends ReactContextBaseJavaModule {
             payFortPayment.requestForPayment(payFortData);
 
         } catch (Exception e) {
-            promise.reject(Payfort.PURCHASE_EXCEPTION, e);
+            promise.reject(e.getMessage(), Payfort.PURCHASE_EXCEPTION);
         }
     }
 

@@ -187,7 +187,7 @@ public class PayFortPayment {
                     requestPurchase();
                 } else {
                     payFortData.setPaymentResponse(response);
-                    promise.reject(Payfort.FAILURE_TOKEN_INIT);
+                    promise.reject(response.toString(), Payfort.FAILURE_TOKEN_INIT);
                 }
             } catch (Exception e) {
                 e.printStackTrace();
