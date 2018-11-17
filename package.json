@@ -1,6 +1,6 @@
 
 {
-  "name": "react-native-native-fort",
+  "name": "react-native-fort",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "payfort"
   ],
   "author": "",
   "license": "",
