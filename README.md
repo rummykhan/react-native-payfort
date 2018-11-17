@@ -49,6 +49,26 @@ NativeFort.LANGUAGE_AR,
 ```
 
 
+```javscript
+
+// Signature for sendCommand
+
+NativeFort.sendCommand(
+    String payfortCommand,
+    String amount, // you have to multiply the value with the currency decimal code according to ISO code 3. e.g. if amount is 2 multiply it by 100 and then pass
+    String currency,
+    String email,
+    String language,
+    String payfortMerchantID,
+    String payfortAccessCode,
+    String payfortShaRequest,
+    String payfortShaResponse,
+    boolean isSandbox
+)
+
+```
+
+
 ```javascript
 
 import NativeFort from 'react-native-fort';
@@ -63,7 +83,7 @@ NativeFort.sendCommand(
     "2000",
     NativeFort.CURRENCY_SAR,
     "rehan_manzoor@outlook.com",
-    "en",
+    NativeFort.LANGUAGE_EN,
     merchantID,
     accessCode,
     shaRequest,
