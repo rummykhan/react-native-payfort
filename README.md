@@ -31,7 +31,7 @@
 
 `NativeFort` exposes some constants for Payfort Commands, Currency and Languages
 
-#### Commands
+#### Constants
 ```javascript
 
 // Commands
@@ -48,10 +48,9 @@ NativeFort.LANGUAGE_AR,
 
 ```
 
+#### Signature for sendCommand
 
 ```javscript
-
-// Signature for sendCommand
 
 NativeFort.sendCommand(
     String payfortCommand,
@@ -68,6 +67,33 @@ NativeFort.sendCommand(
 
 ```
 
+#### Response Format
+
+```json
+{
+  "amount":"2000",
+  "response_code":"14000",
+  "card_number":"400555******0001",
+  "card_holder_name":"Visa",
+  "payment_option":"VISA",
+  "expiry_date":"2105",
+  "customer_ip":"94.58.149.203",
+  "eci":"ECOMMERCE",
+  "language":"en",
+  "fort_id":"154244999500011151",
+  "command":"PURCHASE",
+  "response_message":"Success",
+  "sdk_token":"7A63FCACAC1E23CBE053321E320AED27",
+  "authorization_code":"819341",
+  "merchant_reference":"1542450845349",
+  "customer_email":"rehan_manzoor@outlook.com",
+  "token_name":"79D4D15A30DE2401E053321E320A16E2",
+  "currency":"SAR",
+  "status":"14"
+}
+```
+
+#### Use in React Native Code
 
 ```javascript
 
