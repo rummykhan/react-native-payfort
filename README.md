@@ -14,6 +14,62 @@
 
 `NativeFort` exposes some constants for Payfort Commands, Currency and Languages
 
+#### Use in React Native Code
+
+```javascript
+
+import NativeFort from 'react-native-payfort';
+
+let merchantID = "xxxxx";
+let accessCode = "xxxxx";
+let shaRequest = "xxxxx";
+let shaResponse = "xxxxx";
+
+NativeFort.sendCommand(
+    NativeFort.COMMAND_PURCHASE,
+    "2000",
+    NativeFort.CURRENCY_SAR,
+    "rehan_manzoor@outlook.com",
+    NativeFort.LANGUAGE_EN,
+    merchantID,
+    accessCode,
+    shaRequest,
+    shaResponse,
+    true,
+).then(function(response){
+    console.log(response);
+}).catch(function(error){
+    console.log(error);
+});
+
+```
+
+#### Response Format
+
+```json
+{
+  "amount":"2000",
+  "response_code":"14000",
+  "card_number":"400555******0001",
+  "card_holder_name":"Visa",
+  "payment_option":"VISA",
+  "expiry_date":"2105",
+  "customer_ip":"4.8.1.2",
+  "eci":"ECOMMERCE",
+  "language":"en",
+  "fort_id":"154244999500011151",
+  "command":"PURCHASE",
+  "response_message":"Success",
+  "sdk_token":"7A63FCACAC1E23CBE053321E320AED27",
+  "authorization_code":"819341",
+  "merchant_reference":"1542450845349",
+  "customer_email":"rehan_manzoor@outlook.com",
+  "token_name":"79D4D15A30DE2401E053321E320A16E2",
+  "currency":"SAR",
+  "status":"14"
+}
+```
+
 #### Constants
 ```javascript
 
@@ -47,62 +103,6 @@ NativeFort.sendCommand(
     String payfortShaResponse,
     boolean isSandbox
 )
-
-```
-
-#### Response Format
-
-```json
-{
-  "amount":"2000",
-  "response_code":"14000",
-  "card_number":"400555******0001",
-  "card_holder_name":"Visa",
-  "payment_option":"VISA",
-  "expiry_date":"2105",
-  "customer_ip":"4.8.1.2",
-  "eci":"ECOMMERCE",
-  "language":"en",
-  "fort_id":"154244999500011151",
-  "command":"PURCHASE",
-  "response_message":"Success",
-  "sdk_token":"7A63FCACAC1E23CBE053321E320AED27",
-  "authorization_code":"819341",
-  "merchant_reference":"1542450845349",
-  "customer_email":"rehan_manzoor@outlook.com",
-  "token_name":"79D4D15A30DE2401E053321E320A16E2",
-  "currency":"SAR",
-  "status":"14"
-}
-```
-
-#### Use in React Native Code
-
-```javascript
-
-import NativeFort from 'react-native-payfort';
-
-let merchantID = "xxxxx";
-let accessCode = "xxxxx";
-let shaRequest = "xxxxx";
-let shaResponse = "xxxxx";
-
-NativeFort.sendCommand(
-    NativeFort.COMMAND_PURCHASE,
-    "2000",
-    NativeFort.CURRENCY_SAR,
-    "rehan_manzoor@outlook.com",
-    NativeFort.LANGUAGE_EN,
-    merchantID,
-    accessCode,
-    shaRequest,
-    shaResponse,
-    true,
-).then(function(response){
-    console.log(response);
-}).catch(function(error){
-    console.log(error);
-});
 
 ```
 
