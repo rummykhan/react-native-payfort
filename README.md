@@ -14,8 +14,6 @@
 
 `NativeFort` exposes some constants for Payfort Commands, Currency and Languages
 
-#### Use in React Native Code
-
 ```javascript
 
 import NativeFort from 'react-native-payfort';
