@@ -9,5 +9,10 @@
 }
 RCT_EXPORT_MODULE()
 
+RCT_EXPORT_METHOD(addEvent:(NSString *)message)
+{
+    RCTLogInfo(@"log message %@", message);
+}
+
 @end
   

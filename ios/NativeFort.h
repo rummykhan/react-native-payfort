@@ -4,6 +4,7 @@
 #else
 #import <React/RCTBridgeModule.h>
 #endif
+#import <PayFortSDK/PayFortSDK.h>
 
 @interface NativeFort : NSObject <RCTBridgeModule>
 

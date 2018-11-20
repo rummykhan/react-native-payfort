@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* NativeFort.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* NativeFort.m */; };
+		FC4E249921A33702007B2B4D /* PayFortSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4E249721A33702007B2B4D /* PayFortSDK.framework */; };
+		FC4E249A21A33702007B2B4D /* PayFortSDK.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4E249821A33702007B2B4D /* PayFortSDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +28,8 @@
 		134814201AA4EA6300B7C361 /* libNativeFort.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNativeFort.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* NativeFort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeFort.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* NativeFort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeFort.m; sourceTree = "<group>"; };
+		FC4E249721A33702007B2B4D /* PayFortSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayFortSDK.framework; path = "../../iOSSDK-V1.7.1/PayFortSDK.framework"; sourceTree = "<group>"; };
+		FC4E249821A33702007B2B4D /* PayFortSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PayFortSDK.bundle; path = "../../iOSSDK-V1.7.1/PayFortSDK.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4E249921A33702007B2B4D /* PayFortSDK.framework in Frameworks */,
+				FC4E249A21A33702007B2B4D /* PayFortSDK.bundle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +59,17 @@
 				B3E7B5881CC2AC0600A0062D /* NativeFort.h */,
 				B3E7B5891CC2AC0600A0062D /* NativeFort.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				FC4E249621A33702007B2B4D /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		FC4E249621A33702007B2B4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC4E249821A33702007B2B4D /* PayFortSDK.bundle */,
+				FC4E249721A33702007B2B4D /* PayFortSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +220,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
